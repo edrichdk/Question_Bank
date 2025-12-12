@@ -17,8 +17,8 @@ Fix the bug where selecting a color changes the text color.
 <p id="output">Color me</p>
 
 <script>
-document.getElementByID("color").addEvent("change", () => {
-    output.style.color = this.value;
+  document.getElementById("color").addEventListener("change", function () {
+    document.getElementById("output").style.color = this.value;
 });
 </script>
 
